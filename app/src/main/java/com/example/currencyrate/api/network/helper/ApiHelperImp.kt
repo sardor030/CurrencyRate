@@ -8,7 +8,7 @@ import javax.inject.Inject
 class ApiHelperImp @Inject constructor(
     private val apiService: ApiService
 ): ApiHelper {
-    override suspend fun getCurrency(): Response<CurrencyResponse> {
+    override suspend fun getCurrency(): List<CurrencyResponse> {
         return apiService.getAllCurrency()
     }
 

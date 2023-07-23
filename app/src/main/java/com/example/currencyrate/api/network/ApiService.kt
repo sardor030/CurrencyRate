@@ -7,5 +7,5 @@ import retrofit2.http.GET
 interface ApiService {
 
     @GET("arkhiv-kursov-valyut/json/")
-    suspend fun getAllCurrency(): Response<CurrencyResponse>
+    suspend fun getAllCurrency(): List<CurrencyResponse>
 }
