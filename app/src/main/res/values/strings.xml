@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CurrencyRate</string>
+    <string name="dialog_title">Qiymatni kiriting</string>
+    <string name="amount_0">0</string>
+    <string name="calculation">calculation</string>
+    <string name="close">close</string>
+    <string name="amount_0_00">0.00</string>
 </resources>

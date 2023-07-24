@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/gray"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/textStyle.Roboto.700"
+            android:layout_marginTop="10dp"
+            android:text="@string/dialog_title"
+            android:textColor="@color/gold"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:textAllCaps="true" />
+
+        <EditText
+            android:id="@+id/ed_dialog1"
+            style="@style/textStyle.Roboto"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:background="@drawable/rounded_card_gradient_stroke"
+            android:inputType="number"
+            android:maxLength="15"
+            android:paddingHorizontal="8dp"
+            android:textColor="@color/black"
+            tools:ignore="Autofill,LabelFor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_calculation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gold"
+                android:text="@string/calculation"
+                app:rippleColor="@color/red" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/green"
+                android:text="@string/close"
+                app:rippleColor="@color/red" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_result"
+            style="@style/textStyle.Roboto.600"
+            android:layout_marginTop="15dp"
+            android:text="@string/amount_0_00"
+            android:textColor="@color/red"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
