@@ -1,4 +1,4 @@
-package com.example.currencyrate.ui
+package com.example.currencyrate.ui.main
 
 import android.os.Bundle
 import android.util.Log
@@ -6,6 +6,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.example.currencyrate.R
+import com.example.currencyrate.ui.main.vm.MainViewModel
 import com.example.currencyrate.utils.Resource
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
