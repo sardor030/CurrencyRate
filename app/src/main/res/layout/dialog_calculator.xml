@@ -24,7 +24,7 @@
             app:textAllCaps="true" />
 
         <EditText
-            android:id="@+id/ed_dialog1"
+            android:id="@+id/et_amount"
             style="@style/textStyle.Roboto"
             android:layout_width="match_parent"
             android:layout_margin="15dp"
