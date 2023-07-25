@@ -61,7 +61,6 @@
                 app:rippleColor="@color/red" />
         </LinearLayout>
 
-
         <TextView
             android:id="@+id/tv_result"
             style="@style/textStyle.Roboto.600"

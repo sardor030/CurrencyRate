@@ -29,6 +29,5 @@
             android:textColor="@color/gold"
             tools:text="100000" />
 
-
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

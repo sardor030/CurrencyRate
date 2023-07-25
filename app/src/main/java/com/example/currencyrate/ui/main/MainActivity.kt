@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
-        rvCbu = findViewById(R.id.rv_cbu)
+        rvCbu = findViewById(R.id.rv_main)
         loading = findViewById(R.id.loading)
     }
 }

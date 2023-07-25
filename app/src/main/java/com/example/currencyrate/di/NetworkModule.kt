@@ -21,29 +21,6 @@ object NetworkModule {
     @Provides
     fun provideBaseUrl(): String = BuildConfig.BASE_URL
 
-//    @Singleton
-//    @Provides
-//    fun provideOkHttpClient() = if (BuildConfig.DEBUG){
-//        val loggingInterceptor = HttpLoggingInterceptor()
-//        loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
-//        OkHttpClient.Builder()
-//            .addInterceptor(loggingInterceptor)
-//            .build()
-//    }else{
-//        OkHttpClient
-//            .Builder()
-//            .build()
-//    }
-//
-//    @Singleton
-//    @Provides
-//    fun provideRetrofit(okHttpClient: OkHttpClient, BASE_URL:String): Retrofit = Retrofit.Builder()
-//        .addConverterFactory(GsonConverterFactory.create())
-//        .baseUrl(BASE_URL)
-//        .client(okHttpClient)
-//        .build()
-
-
     @Provides
     @Singleton
     fun provideRetrofit(baseUrl: String): Retrofit {
